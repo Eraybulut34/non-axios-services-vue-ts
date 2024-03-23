@@ -9,7 +9,6 @@ export async function fetchWithInterceptors(url: string, options = {} as any) {
 
   try {
     const response = await fetch(`${API_BASE}${url}`, { ...options, headers });
-    const clonedResponse = response.clone();
     if (!response.ok) {
       if (response.status == 401) {
         console.log("401 - Unauthorized");
@@ -19,9 +18,10 @@ export async function fetchWithInterceptors(url: string, options = {} as any) {
       }
       throw new Error("Network response was not ok.");
     }
-    return await clonedResponse.json();
+    return await response.json();
   } catch (error) {
     console.error("Fetch error:", error);
     throw error;
   }
 }
+
