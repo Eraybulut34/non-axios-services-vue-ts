@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { storeToRefs } from "pinia";
-import { useStore } from "@/stores/Store";
+import { useStore } from "./stores/Store";
 
 const store = useStore();
 const { getPosts, createPost } = store;

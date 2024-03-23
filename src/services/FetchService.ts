@@ -1,4 +1,4 @@
-import { API_BASE } from "@/config/setting";
+import { API_BASE } from "../config/setting";
 
 export async function fetchWithInterceptors(url: string, options = {}) {
   const headers = {

@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { PostService } from "@/services/PostService";
-import { CreatePostCommand } from "@/models/CreatePostCommand";
+import { PostService } from "../services/PostService";
+import { CreatePostCommand } from "../models/CreatePostCommand";
 
 export const useStore = defineStore("store", () => {
   const postService = new PostService();
