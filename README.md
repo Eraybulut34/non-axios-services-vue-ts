@@ -1,9 +1,22 @@
-# Vue 3 + TypeScript + Vite
+## Vue 3 Blog Application with Fetch API
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project demonstrates a simple blog application developed with Vue 3 and Pinia, utilizing the native JavaScript Fetch API for HTTP requests instead of Axios. It allows users to view and create blog posts in a minimalistic interface. In the FetchService file, you can perform all operations that you did with Axios interceptors.
 
-## Recommended Setup
+# Features
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+- List Blog Posts: Display posts fetched from a mock API.
+- Create New Blog Posts: Submit a form to create and display new posts dynamically.
+- Fetch API for HTTP Requests: Leverage the native Fetch API for all CRUD operations.
+- State Management with Pinia: Utilize Pinia for managing application state efficiently.
+- Composition API: Employ Vue 3's Composition API for reactive and composable component logic.
+# Technologies
+- Vue 3
+- Pinia
+- JavaScript Fetch API
+- CSS for styling
+- Installation
+- Follow these steps to set up the project locally:
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+
+
+
