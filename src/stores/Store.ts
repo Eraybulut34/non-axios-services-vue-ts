@@ -2,10 +2,11 @@ import { defineStore } from "pinia";
 import { ref } from "vue";
 import { PostService } from "../services/PostService";
 import { CreatePostCommand } from "../models/CreatePostCommand";
+import { Post } from "../models/Post";
 
 export const useStore = defineStore("store", () => {
   const postService = new PostService();
-  const posts = ref([]);
+  const posts = ref([]) as Post[];
   const newPost = ref(new CreatePostCommand());
 
   const getPosts = async () => {

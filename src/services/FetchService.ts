@@ -1,6 +1,6 @@
 import { API_BASE } from "../config/setting";
 
-export async function fetchWithInterceptors(url: string, options = {}) {
+export async function fetchWithInterceptors(url: string, options = {} as any) {
   const headers = {
     "Content-Type": "application/json",
     Authorization: `exampleToken`,
