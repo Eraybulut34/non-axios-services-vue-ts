@@ -6,7 +6,7 @@ import { Post } from "../models/Post";
 
 export const useStore = defineStore("store", () => {
   const postService = new PostService();
-  const posts = ref([]) as Post[];
+  const posts = ref(new Array<Post>());
   const newPost = ref(new CreatePostCommand());
 
   const getPosts = async () => {
